@@ -26,7 +26,6 @@
 
 /*popup*/
 .wapper-popup{
-display: none;
   width: 100%;
   overflow: hidden;
 }
@@ -201,6 +200,7 @@ display: none;
 		color: #111;
 		background-color: #fff;
 		font-size: 12px;
+		border: none;
 	}
 	.dropbtn {
 	  font-size: 16px;
@@ -228,9 +228,9 @@ display: none;
 	.dropdown-content a:hover {
 		background-color: #f1f1f1;
 	}
-	.dropdown:hover .dropdown-content {
+	/*.dropdown:hover .dropdown-content{
 	  display: block;
-	}
+	}*/
 /*end-langue-drop*/
 
 .top-right span{
@@ -259,6 +259,7 @@ display: none;
 .menu-drop a{
 	text-decoration: none;
 	color: #111;
+	border:none;
 	background-color: #fff;
 }
 .menu-drop{
@@ -439,8 +440,11 @@ display: none;
 	outline: none;
 	width: 110px;
 	height: 37px;
-	background-color: #f3f4f6;
-	border: none;
+	background-color: #fff;
+	border: 1px dotted #111;
+}
+.dropbtn:focus{
+	outline: none;
 }
 @media only screen and (max-width:1200px){
 	.menu-main{

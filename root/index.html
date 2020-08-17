@@ -55,8 +55,8 @@
 					<span>LOGIN</span>
 					<span>
 						<li class="dropdown language">
-						  	<a class="dropbtn" href="javascript:void(0)">ENG</a>
-						  	<div class="dropdown-content">
+						  	<a class="dropbtn" href="javascript:void(0)" id="eng">ENG</a>
+						  	<div class="dropdown-content drop-eng">
 						  		<a href="#">ENG</a>
 						    	<a href="#">JPY</a>
 						    	<a href="#">FRE</a>
@@ -66,8 +66,8 @@
 					</span>
 					<span>
 						<li class="dropdown language">
-						  	<a class="dropbtn" href="javascript:void(0)">USD</a>
-						  	<div class="dropdown-content">
+						  	<a class="dropbtn" href="javascript:void(0)" id="usa">USD</a>
+						  	<div class="dropdown-content drop-usa">
 						  		<a href="#">USD</a>
 						    	<a href="#">GBP</a>
 						    	<a href="#">JPY</a>
@@ -94,7 +94,7 @@
 								      	</li>
 								      	<li class="nav-item">
 								      		<li class="dropdown menu-drop">
-											  	<a class="dropbtn page-drop" href="javascript:void(0)">WOMEN</a>
+											  	<a class="dropbtn page-drop" href="javascript:void(0)" id="women">WOMEN</a>
 											  	<div class="dropdown-content women">
 											  		<div class="row">
 											  			<div class="col-xl-2 top-men">
@@ -135,7 +135,7 @@
 								      	</li>
 										<li class="nav-item">
 											<li class="dropdown menu-drop">
-											  	<a class="dropbtn page-drop" href="javascript:void(0)">MEN</a>
+											  	<a class="dropbtn page-drop" href="javascript:void(0)" id="men">MEN</a>
 											  	<div class="dropdown-content men">
 											  		<div class="row">
 											  			<div class="col-xl-2 top-men">
@@ -171,8 +171,8 @@
 										<li class="nav-item"><a href="#" class="nav-link">SHOP</a></li>
 										<li class="nav-item">
 											<li class="dropdown menu-drop">
-											  	<a class="dropbtn page-drop" href="javascript:void(0)">BLOG</a>
-											  	<div class="dropdown-content page">
+											  	<a class="dropbtn page-drop" href="javascript:void(0)" id="blog">BLOG</a>
+											  	<div class="dropdown-content page box-blog">
 											  		<a href="#">Blog Sidebar</a>
 											    	<a href="#">Blog Categories</a>
 											    	<a href="#">Blog Single Post</a>
@@ -183,7 +183,7 @@
 										</li>
 										<li class="nav-item">
 											<li class="dropdown menu-drop">
-											  	<a class="dropbtn page-drop" href="javascript:void(0)">PAGE</a>
+											  	<a class="dropbtn page-drop" href="javascript:void(0)" id="page">PAGE</a>
 											  	<div class="dropdown-content page">
 											  		<a href="#">Typography</a>
 											    	<a href="#">Inforgraphic</a>
@@ -204,7 +204,7 @@
 						<div class="col-xl-3 col-lg-5 menu-right">
 							<div class="dropdown">
 								<div class="search">
-									<button><i class="fas fa-search"></i></button>
+									<button id="search"><i class="fas fa-search"></i></button>
 								</div>
 								<div class="dropdown-content box-search">
 									<div class="drop-search">
@@ -215,7 +215,7 @@
 							</div>
 							
 							<div class="dropdown">
-								<button class="dropbtn">
+								<button class="dropbtn" id="cart">
 									<div class="cart">
 										<span>$109.00</span>
 										<a href="#" class="notification">
@@ -816,17 +816,6 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$("#btn-close").click(function() {
-				$(".full").hide();
-				$(".popup").hide();
-			});
-			$(".full").click(function() {
-				$(".full").hide();
-				$(".popup").hide();
-			});
-		});
-	</script>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
