@@ -130,6 +130,10 @@
 
 }
 @media (max-width:600px){
+	.wapper-popup{
+		display: none;
+	}
+
 	.text{
 		font-size: 20px;
 		width: 110%;
@@ -446,6 +450,12 @@
 .dropbtn:focus{
 	outline: none;
 }
+.menu-mobile{
+	display: none;
+}
+.menu-mobile a{
+	display: block;
+}
 @media only screen and (max-width:1200px){
 	.menu-main{
 		margin-left: 30px;
@@ -475,6 +485,9 @@
 	}
 }
 @media only screen and (max-width:991px){
+	#men, #blog, #page, #women, #home, #shop, #Contact{
+		color: #6495ed !important;
+	}
 	.menu-right{
 		display: flex;
 		justify-content: space-between;
@@ -485,7 +498,7 @@
 	}
 	.content-menu{
 		background-color: #ccc;
-		text-align: center;
+		text-align:center;
 	}
 	.logo{
 		margin: 0 auto;
@@ -496,15 +509,26 @@
 	.box-search{
 		left:0;
 	}
-	.dropdown-content{
+	/*.dropdown-content{
 		left: 160px;
 		margin-top: 0;
+	}*/
+	.men, .women, .page{
+		display: none !important;
+	}
+	.box-blog, .box-page{
+		display: none;
+	}
+	.menu-mobile{
+		display: block;
+		border-top:1px solid #000;
 	}
 }
 @media (max-width:768px){
-	.dropdown-content{
+	/*.dropdown-content{
 		left: 70px;
-	}
+	}*/
+
 }
 @media (max-width:468px){
 	.drop-search{
@@ -512,6 +536,12 @@
 	}
 	.dropdown-content{
 		left: 30px;
+	}
+	.cart-drop{
+		left: -200px;
+	}
+	.content-menu{
+		text-align:left;
 	}
 }
 @media only screen and (max-width:320px){
@@ -527,6 +557,9 @@
 	}
 	.dropdown-content{
 		left: -35px;
+	}
+	.cart-drop{
+		left: -160px;
 	}
 }
 

@@ -17,7 +17,7 @@ $(document).ready(function() {
 				$(".box-blog").toggle();
 			});
 			$("#page").click(function() {
-				$(".page").toggle();
+				$(".box-page").toggle();
 			});
 			$("#cart").click(function() {
 				$(".cart-drop").toggle();
