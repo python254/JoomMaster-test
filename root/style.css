@@ -380,6 +380,7 @@ display: none;
 	width: 330px;
 	left: -150px;
 	z-index: 999;
+	background-color: #fff;
 }
 .item-1{
 	display: flex;
